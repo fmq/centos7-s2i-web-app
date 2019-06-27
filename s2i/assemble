@@ -53,7 +53,7 @@ if [ ! -z "$YARN_ENABLED" ]; then
 	npx yarn build
 else
 	echo "---> Installing dependencies"
-	echo "---> Using 'npm install'"
+	echo "---> Using 'npm install verbose'"
 	npm install -s --loglevel verbose
 	echo "---> Building with $NPM_BUILD"
 	$NPM_BUILD
