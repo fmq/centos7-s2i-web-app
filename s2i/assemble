@@ -69,6 +69,9 @@ rm -rf /opt/app-root/output
 # Recreate the directory
 mkdir -p /opt/app-root/output
 
+# List output dir 
+ls ./$OUTPUT_DIR/* 
+
 # Move the files from our apps output directory to the common output directory
 mv ./$OUTPUT_DIR/* /opt/app-root/output
 
